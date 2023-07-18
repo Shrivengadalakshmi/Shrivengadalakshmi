@@ -40,7 +40,17 @@ public class NumberDivBy9 {
                  }
             }
     }
+    
+    public static Lead createRecord(string lastname  ,string email , string company){
+        Lead leadRecordToInsert = new Lead();
+        leadRecordToInsert.Company = Company;
+        leadRecordToInsert.LastName = lastname;
+        leadRecordToInsert.Email = email;
+        insert leadRecordToInsert;
+        return leadRecordToInsert;
+    }
 }
+
 
 
 
