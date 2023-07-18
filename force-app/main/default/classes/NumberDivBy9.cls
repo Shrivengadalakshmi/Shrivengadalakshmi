@@ -29,8 +29,16 @@ public class NumberDivBy9 {
     
 
     public static String reverseString(String input) {
-        string reverseName=input.reverse();
+        string reverseName=input.reverse(); 
         return reverseName;
+    }
+    public static void primeNumber(){
+        for (Integer i = 1; i <= 100; i++) {
+         
+              if (Math.mod(i,2) == 1) {
+                System.debug(i);
+                 }
+            }
     }
 }
 

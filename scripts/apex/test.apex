@@ -1,3 +1,5 @@
-NumberDivBy9.numberdivisibleby9(); 
+NumberDivBy9.primeNumber(); 
+
+
 
 
