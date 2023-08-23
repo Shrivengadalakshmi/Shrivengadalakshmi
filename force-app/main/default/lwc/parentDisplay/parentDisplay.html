@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title ="">
+        <p><lightning-formatted-text  value={contactName} ></lightning-formatted-text></p>
+        <p><lightning-formatted-text value={contactPhone} ></lightning-formatted-text></p>
+    <div>
+        <template for:each={contactlist} for:item ="contactItem">
+            {contactItem.Name} - {contactItem.Phone}
+            <c-child-display oncontactinvoke ={captureContactInformation} contact-name ={contactItem.Name} contact-phone ={contactItem.Phone} key ={contactItem.Id} ></c-child-display>
+        </template>
+    </div>
+    </lightning-card>
+</template>
